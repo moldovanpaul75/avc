@@ -24,13 +24,17 @@ https://www.python.org/download/releases/2.7/
 https://pyautogui.readthedocs.io/en/latest/
 
 How to use:
+
 First of all you need a arduino board, a ultrasonic sensor hc-sr04 and a laptop or pc.
 Also you need to install Arduino IDE, which you can download from here https://www.arduino.cc/en/Main/Software , and Python27 32-bit http://www.python.org/ftp/python/2.7.9/python-2.7.9.msi
+
 Alter installing ArduinoIDE and Python27 you need to install serial and pyautogui modules.
 Open command prompt as admin and launch python27
+
 cd C:\Python27
 and after
-pip install pyserial
+
+pip install pyserial,
 pip install pyautogui
 
 After installing all programs connect the ultrasonic sensor to the board like in the circuit diagram and connect it to the laptop.
