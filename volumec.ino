@@ -1,0 +1,74 @@
+
+const int trigger = 4;
+const int echo = 2;
+
+long time_taken;
+int dist, dist1, dist2;
+int ledVup = 9;
+int ledVdown = 8;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(trigger, OUTPUT);
+  pinMode(echo, INPUT);
+
+  pinMode(ledVup, OUTPUT);
+  pinMode(ledVdown, OUTPUT);
+  Serial.begin(9600);
+
+}
+
+
+void calculate_distance(int triggerPin, int echoPin){
+
+  digitalWrite(triggerPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(triggerPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(triggerPin, LOW);
+
+
+  time_taken = pulseIn(echoPin, HIGH);
+  dist = time_taken * 0.034/2;
+  if(dist>50) dist=50;
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  calculate_distance(trigger, echo);
+  dist1 = dist;
+
+    //Serial.print("Distance: ");
+    //Serial.println(dist1);
+
+    if(dist1>=10 && dist <= 40){
+      delay(100);
+      
+      while(dist1 <= 40){
+      
+        calculate_distance(trigger, echo);
+        dist1 = dist;
+        
+        if(dist1 > 10 && dist1 < 20){
+          calculate_distance(trigger, echo);
+          dist1 = dist;
+          Serial.println("VUp");
+          digitalWrite(ledVup, HIGH);
+          delay(350);
+        }
+        else{
+          digitalWrite(ledVup, LOW);
+        }
+        if(dist1 > 20 && dist1 < 30){
+          calculate_distance(trigger, echo);
+          dist1 = dist;
+          Serial.println("VDown");
+          digitalWrite(ledVdown, HIGH);
+          delay(350);
+        }
+        else{
+          digitalWrite(ledVdown, LOW);
+        }
+      }
+    }
+}
