@@ -39,8 +39,15 @@ pip install pyautogui
 
 After installing all programs connect the ultrasonic sensor to the board like in the circuit diagram and connect it to the laptop.
 Using ArduinoIDE upload the code from volumec.ino.
+
 After this open command prompt as admin again and launch python27 
 cd C:\Python27
-and run the python program from volumec.py (connect your board to COM5, if you get a port restricted error reconnect it) http://prntscr.com/m80riz
-Now keep your hand in range of 10 to 20cm for volume up or 20 to 30 for volume down http://prntscr.com/m80ry2
+
+and run the python program from volumec.py (connect your board to COM5, if you get a port restricted error reconnect it) 
+
+http://prntscr.com/m80riz
+
+Now keep your hand in range of 10 to 20cm for volume up or 20 to 30 for volume down 
+
+http://prntscr.com/m80ry2
 
