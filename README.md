@@ -25,5 +25,9 @@ https://www.python.org/download/releases/2.7/
 https://pyautogui.readthedocs.io/en/latest/
 
 How to use:
-
+1.upload the arduino code
+2.open command prompt
+3.launch python27: cd C:\Python27
+4.launch the python program
+3. keep your hand in range of 10 to 20cm for volume up or 20 to 30 for volume down
 
