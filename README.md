@@ -32,8 +32,6 @@ How to use:
 
 3.launch python27: cd C:\Python27
 
-4.launch the python program(connect your board to COM5, if you get a port restricted error reconnect it)
-http://prntscr.com/m80riz
+4.launch the python program(connect your board to COM5, if you get a port restricted error reconnect it) http://prntscr.com/m80riz
 
-5. keep your hand in range of 10 to 20cm for volume up or 20 to 30 for volume down
-http://prntscr.com/m80ry2
+5. keep your hand in range of 10 to 20cm for volume up or 20 to 30 for volume down http://prntscr.com/m80ry2
