@@ -10,7 +10,7 @@ Arduino:
 By reading the value of distance we can arrive at certain actions to be controlled with gestures. When your hand is placed up before the sensor at a particular near distance the volume should increase and if moved away the volume should decrease.
 
 
-Let us see how the program is written to perform the above actions.  So, like all programs we start with defining the I/O pins as shown below. The two US sensors are connected to Digital pins 2, 4 and are powered by +5V pin. The Trigger pin is the output pin and Echo pin is the input pin.
+Let us see how the program is written to perform the above actions. So, like all programs we start with defining the I/O pins as shown below. The US sensor is connected to Digital pins 2, 4 and are powered by +5V pin. The Trigger pin is the output pin and Echo pin is the input pin.
 The Serial communication between Arduino and python takes places at a baud rate of 9600.
 
 We need to calculate the distance between the Sensor and the hand each time before concluding on any action. So we have to do it many times, which means this code should be used as a function. We have written a function named calculate_distance() which will return us the distance between the sensor and the hand.
