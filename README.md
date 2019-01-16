@@ -1,5 +1,4 @@
-# avc
-arduino ultrasonic sensor volume control
+# arduino ultrasonic sensor volume control
 
 The concept behind the project is very simple. We will place a Ultrasonic (US) sensors and will read the distance between it and our hand using Arduino, based on this value of distance we will perform certain actions. To perform actions on our computer we use Python pyautogui library. The commands from Arduino are sent to the computer through serial port (USB). This data will be then read by python which is running on the computer and based on the read data an action will be performed.
 
@@ -35,3 +34,4 @@ How to use:
 4.launch the python program(connect your board to COM5, if you get a port restricted error reconnect it) http://prntscr.com/m80riz
 
 5. keep your hand in range of 10 to 20cm for volume up or 20 to 30 for volume down http://prntscr.com/m80ry2
+
